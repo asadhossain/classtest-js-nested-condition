@@ -9,12 +9,29 @@
     <link rel="stylesheet" href="index.js">
 </head>
 <body>
-    <h1>this isheader sections</h1>
+    <h1>
 
     <script>
 
-var number = parseInt(prompt("enter your number"));
+        var number = parseInt(prompt("enter your number"));
+        if(number%2==0){
+            document.write("your number is even <br>");
+            if(number%4==0){
+                document.write("your number is divided by 4 <br>");
+                }else{document.write("your number is not divided by 4<br>");}
+        }
 
-    </script>
+        else{
+            document.write("your number is odd <br>");
+            if(number%3==0){
+                document.write("your number is divided by 3 <br>");
+            }else {
+                document.write("your number is not divided by 3");
+            }
+        }
+
+
+    </script></h1>
+
 </body>
 </html>
