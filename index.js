@@ -1,2 +1,2 @@
 
-// var number = parseInt(prompt("enter your number"));
+// var number = parseInt(prompt("enter your number"))s;
