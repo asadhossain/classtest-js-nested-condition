@@ -31,27 +31,28 @@
         } 
         */
 
-        var letter = prompt("Enter your letter");
+        var number1 = parseInt(prompt("Enter your 1st Number"));
+        var operator = prompt("Enter your operator like +, -, *, / ");
+        var number2 = parseInt(prompt("Enter your 2nd Number"));
+        var result;
 
-        switch(letter){
-            case "a" :
-                document.write('This is vowel');
+        switch(operator){
+            case "+" :
+                result = number1 + number2;
+                document.write(result);
                 break;
-            case 'e':
-                document.write('This is vowel');
+            case '-':
+
+                document.write(result);
                 break;
-            case 'i':
-                document.write('This is vowel');
+            case '*':
+                document.write(result);
                 break;
-            case 'o': 
-                document.write('This is vowel');
+            case '/': 
+                document.write(result);
                 break;
-            case 'u' : 
-                document.write('This is vowel u');
-                break;
-            
-            
-            
+                      
+                        
             default: 
             document.write('This is consonet');
             break;
