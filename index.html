@@ -31,45 +31,94 @@
         } 
         */
 
-        var number1 = parseInt(prompt("Enter your 1st Number"));
-        var operator = prompt("Enter your operator like +, -, *, / ");
-        var number2 = parseInt(prompt("Enter your 2nd Number"));
-        var result;
 
-        switch(operator){
-            case "+" :
-                result = number1 + number2;
-                document.write(result);
-                break;
 
-            case '-':
+        /*
+    var number1 = parseInt(prompt("Enter your 1st Number"));
+    var operator = prompt("Enter your operator like +, -, *, / ");
+    var number2 = parseInt(prompt("Enter your 2nd Number"));
+    var result;
 
-                result = number1 - number2;
-                document.write(result);
-                break;
-
-            case '*':
-
-                result = number1 * number2;
-                document.write(result);
-                break;
-
-            case '/': 
-
-                result = number1 / number2;
-                document.write(result);
-                break;
-                      
-                        
-            default: 
-            document.write('Invalid matmatic');
+    switch(operator){
+        case "+" :
+            result = number1 + number2;
+            document.write(result);
             break;
-        }
+
+        case '-':
+
+            result = number1 - number2;
+            document.write(result);
+            break;
+
+        case '*':
+
+            result = number1 * number2;
+            document.write(result);
+            break;
+
+        case '/': 
+
+            result = number1 / number2;
+            document.write(result);
+            break;
+                
+                    
+        default: 
+        document.write('Invalid matmatic');
+        break;
+    }
+    
+*/
+
+
+
+
+    var inputt = prompt("To Login press 1 and, for logout press 2");
+    switch(inputt){
+        case '1':
+            var password = prompt('enter your password');
+            if(password==1234){
+
+            var intput = prompt("Press 1 add information & Press 2 for pay bill total");
+            switch(intput){
+                case '1':
+                    var name = prompt("enter your name");
+                    var fname = prompt('Enter your father name');
+                    var age = prompt('enter your age');
+                    document.write ("Name = " + name + "<br> Father Name = " + fname + "<br> Age = " + age);
+
+
+                break;
+
+                case '2':
+                    var med  = parseInt(prompt("Medisine bill"));
+                    var cabin = parseInt(prompt('cabin bill'));
+                    var servicec = 100;
+                    var totals =  med + cabin + servicec;
+                    document.write ("medisin = " + med + "<br> cabin bill = " + cabin + "<br> service fee = " + servicec + "<br> Your total Bill = " + totals);
+                break;
+
+                default: {
+                    alert("secion out");
+                }
+
+            }
+
+            }else{
+                alert("wrong Password");
+            }
+
+            break;
+        
+            case '2':
+            alert('your are successfully logout');
+            break;
         
 
-
-
-
+        default:
+            document.write("Invalid Input");
+    }
 
 
     </script></h1>
