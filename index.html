@@ -130,6 +130,8 @@ var acNo = parseInt(prompt("Enter your account Number"));
 
 var bal = parseInt(prompt('Enter your account balance'));
 
+var logOut = parseInt(prompt("for log out press 2"))
+
 if(acNo==101010){
     document.write("your are login <br>");
     document.write("Your current bal = ", bal , "<br>");
@@ -138,6 +140,10 @@ if(acNo==101010){
         var nweBal = bal - 10000;
 
         document.write("your new balance is = " , nweBal);
+
+        if(logOut==2){
+            alert("your are logout");
+        }else{alert("sorry your still login");}
 
     }else{
         document.write("Sorry your balcance is less than 23000 taka");
