@@ -169,16 +169,26 @@ for(row=1; row<=10; row++){
 */
 
 
-var ban, ind;
-for (ban=1; ban<=10; ban++){
-    document.write(ban + "<br>" + "Outer loop bangladesh" + "<br><br>");
+// var ban, ind;
+// for (ban=1; ban<=10; ban++){
+//     document.write(ban + "<br>" + "Outer loop bangladesh" + "<br><br>");
 
-    for(ind=1; ind<=2; ind++){
-        document.write(ind + " inner loop India" + "<br>");
+//     for(ind=1; ind<=2; ind++){
+//         document.write(ind + " inner loop India" + "<br>");
+//     }
+// }
+
+
+    var row, col;
+    for (row=1; row<=5; row++){
+
+            for(col=1; col<=row; col++){
+                document.write("* " );
+
+            }
+            document.write( "<br>");
+
     }
-}
-
-
 
 
 
